@@ -34,23 +34,18 @@ def gradient_descent(X, y, theta, alpha, iterations, do_plot, l):
         
         sigma = np.zeros((len(theta)))
         for i in range(m):
-            #########################################
-            # Write your code here
+
             # Calculate the hypothesis for the i-th sample of X, with a call to the "calculate_hypothesis" function
             hypothesis = calculate_hypothesis(X, theta, i)
-            ########################################/
+
             output = y[i]
-            #########################################
-            # Write your code here
+
             # Adapt the code, to compute the values of sigma for all the elements of theta
             r = len(sigma)
             for j in range(r):
                 sigma[j] = sigma[j] + (hypothesis - output) * X[i,j]
             ########################################/
         
-        # update theta_temp
-        #########################################
-        # Write your code here
         # Update theta_temp, using the values of sigma
         # Make sure to use lambda, if necessary
         r = len(sigma)
