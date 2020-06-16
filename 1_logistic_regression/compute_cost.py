@@ -19,7 +19,6 @@ def compute_cost(X, y, theta):
         output = y[i]
         # cost = 0.0
         #########################################
-        # Write your code here
         # You must calculate the cost
         cost =  (-np.log(hypothesis)*output)-((1 - output)*np.log(1 - hypothesis))
         ########################################/
