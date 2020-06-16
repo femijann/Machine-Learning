@@ -9,7 +9,6 @@ def calculate_hypothesis(X, theta, i):
     """
     hypothesis = 0.0
     #########################################
-    # Write your code here
     # You must calculate the hypothesis for the i-th sample of X, given X, theta and i.
     c = X.shape[1]
     for j in range(c):
