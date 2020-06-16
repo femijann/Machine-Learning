@@ -23,13 +23,13 @@ def gradient_descent(X, y, theta, alpha, iterations):
         sigma = np.zeros((len(theta)))
         for i in range(m):
             #########################################
-            # Write your code here
+            
             # Calculate the hypothesis for the i-th sample of X, with a call to the "calculate_hypothesis" function
             hypothesis = calculate_hypothesis(X, theta, i)
             ########################################/
             output = y[i]
             #########################################
-            # Write your code here
+            
             # Adapt the code, to compute the values of sigma for all the elements of theta
             r = len(sigma)
             for j in range(r):
@@ -38,7 +38,7 @@ def gradient_descent(X, y, theta, alpha, iterations):
 
         # update theta_temp
         #########################################
-        # Write your code here
+        
         # Update theta_temp, using the values of sigma
         r = len(sigma)
         for j in range(r):
