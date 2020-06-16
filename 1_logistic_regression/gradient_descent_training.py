@@ -26,13 +26,13 @@ def gradient_descent_training(X_train, y_train, X_test, y_test, theta, alpha, it
         sigma = np.zeros((len(theta)))
         for i in range(m):
             #########################################
-            # Write your code here
+            
             # Calculate the hypothesis for the i-th sample of X, with a call to the "calculate_hypothesis" function
             hypothesis = calculate_hypothesis(X_train , theta, i)
             ########################################/
             output = y_train[i]
             #########################################
-            # Write your code here
+            
             # Adapt the code, to compute the values of sigma for all the elements of theta
             r = len(sigma)
             for j in range(r):
@@ -42,7 +42,7 @@ def gradient_descent_training(X_train, y_train, X_test, y_test, theta, alpha, it
         
         # update theta_temp
         #########################################
-        # Write your code here
+        
         # Update theta_temp, using the values of sigma
         r = len(sigma)
         for i in range(r):
@@ -56,7 +56,7 @@ def gradient_descent_training(X_train, y_train, X_test, y_test, theta, alpha, it
         
         # append current iteration's cost to cost vector
         #########################################
-        # Write your code here
+        
         # Store costs for both train and test set in their corresponding vectors
         iteration_cost_train = compute_cost(X_train, y_train, theta)
         iteration_cost_test  = compute_cost(X_test, y_test, theta)
